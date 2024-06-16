@@ -1,0 +1,273 @@
+
+**** 06/16/24 18:03:12 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC-DC Sim Profile"  [ c:\users\louwr\onedrive\desktop\altuim test\altuimtest\dc to dc conveter\dc to dc conv
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "DC-DC Sim Profile.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\cds_spb_home\cdssetup\OrCAD_PSpiceTIPSpice_Install\23.1.0\PSpice.ini file:
+.lib "nom_pspti.lib" 
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 6m  0 
+.OPTIONS ADVCONV
+.OPTIONS FILEMODELSEARCH
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source DC TO DC CONVETER
+C_C1         0 IN  6.8uF  TC=0,0 
+C_C2         N00415 OUT  1n  TC=0,0 
+C_C3         0 OUT  47uF  TC=0,0 
+C_C4         N00445 N00461  100nF  TC=0,0 
+R_R1         N00415 OUT  100K TC=0,0 
+R_R2         0 N00415  22.1K TC=0,0 
+L_L1         N00445 OUT  10uH  
+R_Rload         OUT 0  10 TC=0,0 
+X_U2         N00461 IN 0 N00445 IN N00415 TPS54202H_TRANS
+V_V1         IN 0 16Vdc
+
+**** RESUMING "DC-DC Sim Profile.cir" ****
+.END
+
+WARNING(ORPSIM-15223): Library file C:\cds_spb_home\cdssetup\pspTILibDir\nom_pspti.lib has changed since index file nom_pspti.ind was created.
+
+WARNING(ORPSIM-15227): The timestamp changed from Fri Dec  1 19:17:32 2023 to Sun Jun 16 18:02:49 2024.
+
+INFO(ORPSIM-15422): Making new index file nom_pspti.ind for library file nom_pspti.lib.
+
+Index has 117658 entries from 5320 file(s).
+
+**** 06/16/24 18:03:12 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC-DC Sim Profile"  [ c:\users\louwr\onedrive\desktop\altuim test\altuimtest\dc to dc conveter\dc to dc conv
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               D_D2            D_D             D_D1            
+          IS    1.000000E-15    1.000000E-15    1.000000E-15 
+           N     .1            10.000000E-06     .1          
+          RS                                     .05         
+          TT   10.000000E-12   10.000000E-12   10.000000E-12 
+
+
+               X_U2.X_U8_D15.dd1 
+          IS   10.000000E-15 
+
+
+               X_U2.X_U8_D16.dd1 
+          IS   10.000000E-15 
+
+
+               X_U2.X_U6_U603.d_d1 
+          IS    1.000000E-15 
+           N     .1          
+          RS     .05         
+          TT   10.000000E-12 
+
+
+**** 06/16/24 18:03:12 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC-DC Sim Profile"  [ c:\users\louwr\onedrive\desktop\altuim test\altuimtest\dc to dc conveter\dc to dc conv
+
+
+ ****     Voltage Controlled Switch MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U2.X_U8_S31._U8_S31 
+         RON     .078        
+        ROFF   10.000000E+06 
+         VON    1.1          
+        VOFF     .4          
+
+
+               X_U2.X_U8_S4._U8_S4 
+         RON    2            
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U2.X_U8_S5._U8_S5 
+         RON    1            
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U2.X_U8_S30._U8_S30 
+         RON     .148        
+        ROFF   10.000000E+06 
+         VON    1.1          
+        VOFF     .4          
+
+
+               X_U2.X_U8_S6._U8_S6 
+         RON    2            
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U2.X_U8_S7._U8_S7 
+         RON    1            
+        ROFF    1.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U2.X_U8_S35._U8_S35 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U2.X_U10_S5._U10_S5 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U2.X_U10_S2._U10_S2 
+         RON    1            
+        ROFF    1.000000E+06 
+         VON     .75         
+        VOFF     .25         
+
+
+               X_U2.X_U10_S36._U10_S36 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U2.X_U3_S26._U3_S26 
+         RON     .1          
+        ROFF  100.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U2.X_U5_S2._U5_S2 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .5          
+        VOFF     .2          
+
+
+               X_U2.X_U4_S68._U4_S68 
+         RON    3.571000E+03 
+        ROFF  100.000000E+06 
+         VON     .8          
+        VOFF     .2          
+
+
+               X_U2.X_U6_S2._U6_S2 
+         RON    1.000000E-03 
+        ROFF    1.000000E+09 
+         VON     .75         
+        VOFF     .25         
+
+
+WARNING -- Exceptionally high value of junction voltage (1.833e+00) or low value of thermal voltage (2.586e-03) is seen in device X_U2.D_U11_D11 that may lead to math overflow.
+To avoid this, try to lower the junction voltage by increasing RS (Series Resistance) or N (ideality factor) parameter values in the model.
+
+ERROR(ORPSIM-16551): Floating point computation failed during Device/Model Load. Possible solutions: 1)Ensure that all device parameters are in valid range. 2)Try using .options LIMIT
+
+INTERNAL ERROR -- Overflow in device X_U2.D_U11_D11, Divide(1.50525e+306, 0.00258642)
+
+ABORTING SIMULATION
+**** 06/16/24 18:03:12 **** PSpice 23.1.0 (30 January 2024) *** ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-DC-DC Sim Profile"  [ c:\users\louwr\onedrive\desktop\altuim test\altuimtest\dc to dc conveter\dc to dc conv
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+Node counts:
+  Top level (NUNODS)                =           6
+  External (NCNODS)                 =         343
+  Total (NUMNOD)                    =         353
+
+Total device count (NUMEL)          =         570
+  Capacitors (C)                    =         143
+  Diodes (D)                        =          30
+  VCVS (E)                          =         142
+  VCCS (G)                          =          18
+  CCVS (H)                          =           2
+  Current Sources (I)               =           1
+  Inductors (L)                     =           1
+  Resistors (R)                     =         170
+  VSwitches (S)                     =          14
+  Voltage Sources (V)               =          48
+
+Number of subcircuits (X)           =         101
+
+Matrix statistics:
+  Matrix size (NSTOP)               =         546
+  Initial no. elements (NTTAR)      =        1345
+  No. elements w/ fillin (NTTBR)    =        1741
+  No. fillins (IFILL)               =         396
+  No. overflows (NTTOV)             =         446
+  No. LU operations (IOPS)          =        8844
+  Percent sparsity (PERSPA)         =      99.416
+
+Analysis statistics:
+  No. total time points (NUMTTP)    =           0
+  No. rejected time points (NUMRTP) =           0
+  No. iterations (NUMNIT)           =           0
+
+Load Threads                        =          12
+
+Runtime statistics:                       Seconds      Iterations
+  Matrix load                       =         .08
+  Matrix solution                   =        0.00               2
+  Readin                            =       12.05
+  General setup                     =         .03
+  CMI setup                     =        0.00
+  Setup                             =         .03
+  DC sweep                          =        0.00               0
+  Bias point                        =        0.00               0
+  AC and noise                      =        0.00               0
+  Total transient analysis          =        0.00
+  Output                            =        0.00
+  Overhead                          =         .05
+  Total job time (using Solver 1)   =       12.16
+

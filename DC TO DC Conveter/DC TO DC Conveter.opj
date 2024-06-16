@@ -11,11 +11,20 @@
     (File ".\dc to dc conveter.dsn"
       (Type "Schematic Design"))
     (BuildFileAddedOrDeleted "x")
-    (CompileFileAddedOrDeleted "x"))
+    (CompileFileAddedOrDeleted "x")
+    (PSPICE_Regenerate_Netlist_Flag "FALSE"))
   (Folder "Layout")
-  (Folder "Outputs")
+  (Folder "Outputs"
+    (File ".\dc to dc conveter-pspicefiles\schematic1\schematic1.net"
+      (Type "Report")))
   (Folder "PSpice Resources"
-    (Folder "Simulation Profiles")
+    (Folder "Simulation Profiles"
+      (ActiveProfile
+         ".\dc to dc conveter-pspicefiles\schematic1\dc-dc sim profile.sim")
+      (File.PSpice.{09528990-3187-11D2-BC7B-00A0C90CBF91}
+         ".\dc to dc conveter-pspicefiles\schematic1\dc-dc sim profile.sim"
+        (DisplayName "SCHEMATIC1-DC-DC Sim Profile")
+        (Type "PSpice Profile")))
     (Folder "Model Libraries"
       (Sort User))
     (Folder "Stimulus Files"
@@ -24,25 +33,70 @@
       (Sort User)))
   (DefaultLibraryBrowseDirectory "library\PSpice")
   (Folder "Logs")
-  (PartMRUSelector)
+  (PartMRUSelector
+    (VDC
+      (FullPartName "VDC.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
+      (DeviceIndex "0"))
+    (TPS54202HDDC_TRANS
+      (FullPartName "TPS54202HDDC_TRANS.Normal")
+      (LibraryName
+         "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\TPS54202HDDC_TRANS.OLB")
+      (DeviceIndex "0"))
+    (0
+      (LibraryName "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (R
+      (FullPartName "R.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (C
+      (FullPartName "C.Normal")
+      (LibraryName
+         "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
+      (DeviceIndex "0"))
+    (TPS54202DDC_TRANS
+      (FullPartName "TPS54202DDC_TRANS.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\TPS54202DDC_TRANS.OLB")
+      (DeviceIndex "0"))
+    (LM21305
+      (FullPartName "LM21305.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\LM21305_TRANS.OLB")
+      (DeviceIndex "0")))
   (GlobalState
     (FileView
       (Path "Design Resources")
-      (Select "Design Resources"))
+      (Path "Design Resources"
+         "c:\users\louwr\onedrive\desktop\altuim test\altuimtest\dc to dc conveter\dc to dc conveter.dsn")
+      (Path "Design Resources"
+         "c:\users\louwr\onedrive\desktop\altuim test\altuimtest\dc to dc conveter\dc to dc conveter.dsn"
+         "SCHEMATIC1")
+      (Path "Outputs")
+      (Select "Design Resources"
+         "c:\users\louwr\onedrive\desktop\altuim test\altuimtest\dc to dc conveter\dc to dc conveter.dsn"
+         "SCHEMATIC1" "PAGE1"))
     (HierarchyView)
     (Doc
       (Type "COrCapturePMDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 579"))
+        (Placement "44 0 1 -1 -1 -1 -1 0 200 0 747"))
       (Tab 0))
     (Doc
       (Type "COrSchematicDoc")
       (Frame
-        (Placement "44 0 1 -1 -1 -1 -1 5 884 24 597")
-        (Scroll "0 0")
-        (Zoom "100")
+        (Placement "44 0 1 -1 -1 -1 -1 5 1268 24 765")
+        (Scroll "465 375")
+        (Zoom "144")
         (Occurrence "/"))
       (Path
          "C:\USERS\LOUWR\ONEDRIVE\DESKTOP\ALTUIM TEST\ALTUIMTEST\DC TO DC CONVETER\DC TO DC CONVETER.DSN")
       (Schematic "SCHEMATIC1")
-      (Page "PAGE1"))))
+      (Page "PAGE1")))
+  (MPSSessionName "louwr"))

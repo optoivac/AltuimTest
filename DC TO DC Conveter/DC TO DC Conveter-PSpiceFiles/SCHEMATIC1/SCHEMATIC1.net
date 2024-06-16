@@ -1,0 +1,11 @@
+* source DC TO DC CONVETER
+C_C1         0 IN  6.8uF  TC=0,0 
+C_C2         N00415 OUT  1n  TC=0,0 
+C_C3         0 OUT  47uF  TC=0,0 
+C_C4         N00445 N00461  100nF  TC=0,0 
+R_R1         N00415 OUT  100K TC=0,0 
+R_R2         0 N00415  22.1K TC=0,0 
+L_L1         N00445 OUT  10uH  
+R_Rload         OUT 0  10 TC=0,0 
+X_U2         N00461 IN 0 N00445 IN N00415 TPS54202H_TRANS
+V_V1         IN 0 16Vdc
