@@ -1,6 +1,6 @@
 (ExpressProject "DC TO DC Conveter"
   (ProjectVersion "19981106")
-  (SoftwareVersion "23.1-2024 S001-[06/16/24]")
+  (SoftwareVersion "23.1-2024 S001-[06/17/24]")
   (ProjectType "Analog or A/D Mixed Mode")
   (Folder "Design Resources"
     (Folder "Library")
@@ -39,16 +39,11 @@
       (LibraryName
          "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\SOURCE.OLB")
       (DeviceIndex "0"))
-    (TPS54202HDDC_TRANS
-      (FullPartName "TPS54202HDDC_TRANS.Normal")
-      (LibraryName
-         "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\TPS54202HDDC_TRANS.OLB")
-      (DeviceIndex "0"))
     (0
       (LibraryName "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\CAPSYM.OLB")
       (DeviceIndex "0"))
-    (L
-      (FullPartName "L.Normal")
+    (C
+      (FullPartName "C.Normal")
       (LibraryName
          "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
@@ -57,8 +52,25 @@
       (LibraryName
          "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
-    (C
-      (FullPartName "C.Normal")
+    (LM1084_ADJ_TRANS
+      (FullPartName "LM1084_ADJ_TRANS.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\LM1084_ADJ_TRANS.OLB")
+      (DeviceIndex "0"))
+    (LM1084_3P3_TRANS
+      (FullPartName "LM1084_3P3_TRANS.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\LM1084_3P3_TRANS.OLB")
+      (DeviceIndex "0"))
+    (LM25037_TRANS
+      (FullPartName "LM25037_TRANS.Normal")
+      (LibraryName "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\LM25037_TRANS.OLB")
+      (DeviceIndex "0"))
+    (TPS54202HDDC_TRANS
+      (FullPartName "TPS54202HDDC_TRANS.Normal")
+      (LibraryName
+         "C:\CDS_SPB_HOME\CDSSETUP\PSPTILIBDIR\TPS54202HDDC_TRANS.OLB")
+      (DeviceIndex "0"))
+    (L
+      (FullPartName "L.Normal")
       (LibraryName
          "C:\CADENCE\PSPICETI\TOOLS\CAPTURE\LIBRARY\PSPICE\ANALOG.OLB")
       (DeviceIndex "0"))
@@ -92,7 +104,7 @@
       (Type "COrSchematicDoc")
       (Frame
         (Placement "44 0 1 -1 -1 -1 -1 5 1268 24 765")
-        (Scroll "465 375")
+        (Scroll "194 518")
         (Zoom "144")
         (Occurrence "/"))
       (Path
